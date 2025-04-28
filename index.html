@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>课程信息</title>
+    <link
+      rel="stylesheet"
+      href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -60,14 +65,28 @@
       }
       .download-link {
         display: inline-block;
-        padding: 10px 20px;
-        background-color: #74146f;
-        color: white;
-        text-decoration: none;
+        font-size: 14px;
+        padding: 5px 17.5px;
+        /* background-color: #74146f; */
+        color: #74146f;
+        font-weight: bold;
+        text-decoration: underline;
         border-radius: 100px;
+        margin-left: 10px;
+        text-wrap: nowrap;
+      }
+      .download-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
       }
       .download-link:hover {
-        background-color: #6e126a;
+        opacity: 0.8;
+      }
+      .head_title{
+        padding-bottom: 12.5px;
+        border-bottom: 1px solid #ebebeb;
       }
     </style>
   </head>
@@ -88,7 +107,7 @@
 
     <div class="container">
       <div class="container-ele">
-        <h2>课程信息</h2>
+        <h2 class="head_title"><i class="fa fa-archive" style="margin-right: 10px;"></i>课程信息</h2>
         <p>
           <strong>主讲老师：</strong
           ><a href="https://ninelab.org.cn/?p=539"><b>赵阳明</b>（南雍楼西230室）</a>、<a
@@ -110,8 +129,71 @@
         </ul>
       </div>
       <div class="container-ele">
-        <h2>课程大纲</h2>
-        <ul>
+        <h2 class="head_title"><i class="fa fa-tasks" style="margin-right: 10px;"></i>作业发布</h2>
+        <ol>
+          <li>
+            <a
+              href="./作业1.pdf"
+              class="download-link"
+              style="font-size: 16px; padding: 0px 5px"
+              download
+              >作业1(点击查看)</a
+            >（2025.5.30前截止）
+          </li>
+        </ol>
+      </div>
+      <div class="container-ele">
+        <h2 class="head_title"><i class="fa fa-file" style="margin-right: 10px;"></i>课堂课件（持续更新）</h2>
+        <div class="download-line">
+          <div style="font-size: 16px">第一章-计算机网络和因特网</div>
+          <a href="./第1章-计算机网络和因特网.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第二章-应用层</div>
+          <a href="./2-应用层.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第三章-运输层1</div>
+          <a href="./3-运输层-1.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第三章-运输层2</div>
+          <a href="./3-运输层-2.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第三章-运输层3</div>
+          <a href="./3-运输层-3.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第四章-网络层(数据平面)-1</div>
+          <a href="./4-网络层(数据平面)-1.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第四章-网络层(数据平面)-2</div>
+          <a href="./4-网络层(数据平面)-2.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第五章-网络层(控制平面)-1</div>
+          <a href="./5-网络层(控制平面)-1.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <div class="download-line">
+          <div style="font-size: 16px">第五章-网络层(控制平面)-2</div>
+          <a href="./5-网络层(控制平面)-2.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <!-- 6-链路层和局域网-1.pdf -->
+        <div class="download-line">
+          <div style="font-size: 16px">第六章-链路层和局域网-1</div>
+          <a href="./6-链路层和局域网-1.pdf" class="download-link" download>下载PDF</a>
+        </div>
+        <!-- 6-链路层和局域网-2.pdf -->
+        <div class="download-line">
+          <div style="font-size: 16px">第六章-链路层和局域网-2</div>
+          <a href="./6-链路层和局域网-2.pdf" class="download-link" download>下载PDF</a>
+        </div>
+      </div>
+      <div class="container-ele">
+        <h2 class="head_title"><i class="fa fa-tag" style="margin-right: 10px;"></i>课程大纲</h2>
+        <ol>
           <li>计算机网络和因特网（2学时）</li>
           <li>应用层（2学时）</li>
           <li>运输层（6学时）</li>
@@ -121,14 +203,10 @@
           <li>无线网络和移动网络（2学时）</li>
           <li>计算机网络中的安全（4学时）</li>
           <li>习题课和总复习（2学时）</li>
-        </ul>
-        <p><strong>课程实验：</strong></p>
-        <ul>
-          <li>课外时间，待定</li>
-        </ul>
+        </ol>
       </div>
       <div class="container-ele">
-        <h2>考核形式</h2>
+        <h2 class="head_title"><i class="fa fa-rocket" style="margin-right: 10px;"></i>考核形式</h2>
         平时成绩（包括上课、课后作业和实验报告）: 40%
         <ul>
           <li>随机抽查上课情况；</li>
@@ -143,203 +221,9 @@
           <li>课外时间，待定</li>
         </ul>
       </div>
-      <div class="container-ele">
-        <h2>课程PPT（持续更新）</h2>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第一章-计算机网络和因特网</div>
-          <a
-            href="./第1章-计算机网络和因特网.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第二章-应用层</div>
-          <a
-            href="./2-应用层.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第三章-运输层1</div>
-          <a
-            href="./3-运输层-1.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第三章-运输层2</div>
-          <a
-            href="./3-运输层-2.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第三章-运输层3</div>
-          <a
-            href="./3-运输层-3.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第四章-网络层(数据平面)-1</div>
-          <a
-            href="./4-网络层(数据平面)-1.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第四章-网络层(数据平面)-2</div>
-          <a
-            href="./4-网络层(数据平面)-2.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第五章-网络层(控制平面)-1</div>
-          <a
-            href="./5-网络层(控制平面)-1.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第五章-网络层(控制平面)-2</div>
-          <a
-            href="./5-网络层(控制平面)-2.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-        <!-- 6-链路层和局域网-1.pdf -->
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第六章-链路层和局域网-1</div>
-          <a
-            href="./6-链路层和局域网-1.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-<!--         6-链路层和局域网-2.pdf -->
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-          "
-        >
-          <div style="font-size: 16px">第六章-链路层和局域网-2</div>
-          <a
-            href="./6-链路层和局域网-2.pdf"
-            style="margin-left: 10px; text-wrap: nowrap"
-            class="download-link"
-            download
-            >下载</a
-          >
-        </div>
-      </div>
     </div>
     <div style="text-align: center; margin-top: 20px; margin-bottom: 45px">
-      <a style="color: #888" href="https://is.nju.edu.cn"
-        >@2025 南京大学智能科学与技术学院</a
-      >
+      <a style="color: #888" href="https://is.nju.edu.cn">@2025 南京大学智能科学与技术学院</a>
     </div>
   </body>
 </html>
